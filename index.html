@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Text Decoder</title>
+  </head>
+  <body>
+    <main>
+
+      <div class="form">
+
+        <figure>
+          <h1><img src="b.png" alt="B"></h1>
+        </figure>
+
+        <div  class="text-area">
+          <textarea name="textbox" class="textbox" placeholder="Type Your Text"></textarea>
+        </div>
+
+        <div class="form-alert">
+
+          <div class="alert-text">
+            <label for="textbox" class="alert"><img src="Vector.png"> Only lowercase letters and no accent.</label>
+          </div>
+
+          <div class="form-button">
+            <button class="button" onclick="encrypt()" id="encrypt">Encrypt text</button>
+            <button class="button" onclick="decrypt()" id="decrypt">Decrypt text</button>
+          </div>
+
+        </div>
+          <div class="result">
+            <img class="img-result" src="Lupa.png" alt="A person with a magnifying glass">
+            <h2 class="text1">No message found.</h2>
+            <p class="text2">Enter a text that you want to encrypt or decrypt.</p>
+          </div>
+
+        
+      </div>
+
+      <footer>
+
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/bruno-gustavo-dev/" target="_blank"><ion-icon class="anchor" name="logo-linkedin"></ion-icon></a>
+          <a href="https://github.com/djbrunodf" target="_blank"><ion-icon class="anchor" name="logo-github"></ion-icon></a>
+        </div>
+
+        <h3>Desenvolvido por Bruno Gustavo</h3>
+
+      </footer>
+
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
